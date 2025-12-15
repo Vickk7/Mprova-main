@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto MPROVA</title>
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/inscricao.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/logo_foguete.png" type="png">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-area">
+            <span class="logo-svg">
+                <img class="logo-img" src="../assets/img/logo_foguete.png" alt="">
+            </span>
+            <span class="logo-text">
+                <strong>PROJETO<br>M<span class="logo-m-blue">PROVA</span></strong>
+            </span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Index.html">Início</a></li>
+                <li><a href="./metodologia.html">Metodologia</a></li>
+                <li><a href="./olimpiadas.html">Olimpíadas</a></li>
+                <li><a href="./equipe.html">Equipe</a></li>
+                <li><a href="./inscricao.html" class="contorno">Inscreva-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="inscricao-main">
+        <div class="container">
+            <div class="header">
+                <h1><i class="fas fa-graduation-cap"></i> MPROVA</h1>
+                <p>Formulário de Inscrição - Preparação para Olimpíadas Acadêmicas</p>
+            </div>
+
+            <div class="form-content">
+                <div class="info-box">
+                    <h3><i class="fas fa-info-circle"></i> Informações Importantes</h3>
+                    <ul>
+                        <li>Para facilitar a comunicação, criamos uma comunidade no WhatsApp</li>
+                        <li>Entre apenas nos grupos das olimpíadas que tem interesse</li>
+                        <li>Todas as aulas serão realizadas pelo Google Meet</li>
+                        <li>Os links serão disponibilizados alguns minutos antes das monitorias</li>
+                        <li>Materiais: videoaulas, apostilas, listas de exercícios e mais</li>
+                        <li>Sua dedicação é fundamental para garantir bons resultados!</li>
+                    </ul>
+                </div>
+
+                <form id="inscricaoForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo <span class="required">*</span></label>
+                        <input type="text" id="nome" name="nome" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone/WhatsApp <span class="required">*</span></label>
+                        <input type="tel" id="telefone" name="telefone" class="form-control" required
+                            placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="escola">Nome da escola em que você estuda <span class="required">*</span></label>
+                        <input type="text" id="escola" name="escola" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoescola">Em qual das categorias abaixo sua escola se encaixa? <span
+                                class="required">*</span></label>
+                        <select id="tipoescola" name="tipoescola" class="form-control" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="municipal">Municipal</option>
+                            <option value="estadual">Estadual</option>
+                            <option value="federal">Federal</option>
+                            <option value="privada">Privada</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serie">Qual série/ano você está cursando? <span class="required">*</span></label>
+                        <select id="serie" name="serie" class="form-control" required>
+                            <option value="">Selecione sua série</option>
+                            <option value="6ano">6º Ano</option>
+                            <option value="7ano">7º Ano</option>
+                            <option value="8ano">8º Ano</option>
+                            <option value="9ano">9º Ano</option>
+                            <option value="1medio">1º Ano - Ensino Médio</option>
+                            <option value="2medio">2º Ano - Ensino Médio</option>
+                            <option value="3medio">3º Ano - Ensino Médio</option>
+                            <option value="4medio">4º Ano - Ensino Médio</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="idade">Qual sua idade? <span class="required">*</span></label>
+                        <input type="number" id="idade" name="idade" class="form-control" min="10" max="25">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experiencia">Já participou de alguma olimpíada? Se sim, indique quais <span
+                                class="required">*</span></label>
+                        <input type="text" id="experiencia" name="experiencia" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="premiacao">Já foi premiado(a) em alguma olimpíada? Se sim, indique quais <span
+                                class="required">*</span></label>
+                        <input type="text" id="premiacao" name="premiacao" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Selecione as olimpíadas que deseja participar: <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-grid">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="obf" name="olimpiadas[]" value="obf">
+                                    <label for="obf">Olimpíada Brasileira de Física (OBF)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="obfep" name="olimpiadas[]" value="obfep">
+                                    <label for="obfep">Olimpíada Brasileira de Física na Escola Pública (OBFEP)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="oba" name="olimpiadas[]" value="oba">
+                                    <label for="oba">Olimpíada Brasileira de Astronomia e Astronáutica (OBA)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="onad" name="olimpiadas[]" value="onad">
+                                    <label for="onad">Olimpíada Nacional de Astronomia Digital (ONAD)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="onc" name="olimpiadas[]" value="onc">
+                                    <label for="onc">Olimpíada Nacional de Ciências (ONC)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="obmep" name="olimpiadas[]" value="obmep">
+                                    <label for="obmep">Olimpíada Brasileira de Matemática das Escolas Públicas
+                                        (OBMEP)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="obg" name="olimpiadas[]" value="obg">
+                                    <label for="obg">Olimpíada Brasileira de Geografia (OBG)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="ol" name="olimpiadas[]" value="ol">
+                                    <label for="ol">Olimpíada de Literatura (OL)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="obi" name="olimpiadas[]" value="obi">
+                                    <label for="obi">Olimpíada Brasileira de Informática (OBI)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="extras">Além das olimpíadas citadas acima, você tem interesse em mais alguma?
+                            </span></label>
+                        <input type="text" id="extras" name="extras" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enem">Além das olimpíadas, oferecemos preparatório para o ENEM com aulas de
+                            matemática e física. Você teria interesse em participar? <span
+                                class="required">*</span></label>
+                        <select id="enem" name="enem" class="form-control" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="municipal">Sim</option>
+                            <option value="estadual">Não</option>
+                            <option value="federal">Talvez</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="objetivos">Conte-nos sobre seus objetivos com as olimpíadas e o que espera do
+                            projeto MPROVA</label>
+                        <textarea id="objetivos" name="objetivos" class="form-control" rows="6"></textarea>
+                    </div>
+
+                    <div class="submit-section">
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Inscrição
+                        </button>
+
+                        <div class="contact-info">
+                            <h4><i class="fas fa-envelope"></i> Dúvidas?</h4>
+                            <p><strong>E-mail:</strong> projetomprova@gmail.com</p>
+                            <p><strong>Instagram:</strong> m.prova_</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal de Sucesso -->
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+
+                <div class="success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <h2>Inscrição Realizada!</h2>
+                <p>Parabéns! Sua inscrição foi registrada com sucesso. Agora, junte-se à nossa comunidade para receber
+                    atualizações, materiais de estudo e interagir com outros participantes!</p>
+
+                <div class="community-links">
+                    <a href="https://chat.whatsapp.com/LhWMw1lMnHZK2NL0hl4Qc2" target="_blank"
+                        class="community-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Entrar no Grupo do WhatsApp</span>
+                    </a>
+
+                    <a href="https://discord.gg/TK2X3YmF" target="_blank" class="community-btn discord-btn">
+                        <i class="fab fa-discord"></i>
+                        <span>Entrar no Servidor do Discord</span>
+                    </a>
+                </div>
+
+                <div class="modal-footer">
+                    <p>Você pode entrar na comunidade mais tarde através das nossas redes sociais!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/inscricao.js"></script>
+
+    <footer>
+        <div class="footer-logo-area">
+            <img class="footer-logo-img" src="../assets/img/logo_foguete.png" alt="Logo Projeto MPROVA">
+            <span class="footer-logo-text">
+                PROJETO<br>M<span class="footer-logo-m-blue">PROVA</span>
+            </span>
+        </div>
+        <div class="footer-contact">
+            <p>Entre em contato conosco!</p>
+            <p><a href="mailto:projetomprova@gmail.com" class="email-link">projetomprova@gmail.com</a></p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/m.prova_?igsh=bmw5am4zNDdma2xp" target="_blank"><img
+                    src="../assets/img/logo_instagram.svg" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

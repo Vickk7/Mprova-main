@@ -1,0 +1,102 @@
+
+/* Área do foguete - Elemento decorativo principal */
+/* Posicionamento absoluto para sobrepor outros elementos */
+.rocket-area {
+  position: absolute;
+  right: -5%;
+  top: 70%;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  width: 45vw;
+  max-width: 800px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none; /* Permite clicar em elementos abaixo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rocket-area svg, .rocket-area img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 500vh;
+  object-fit: contain;
+}
+
+/* Responsividade - Tablets e dispositivos médios */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-content {
+    margin-left: 32px;
+    margin-top: 48px;
+    max-width: 90vw;
+  }
+  .rocket-area {
+    position: static;
+    width: 90%;
+    max-width: 450px;
+    min-width: 0;
+    margin: 24px auto 0 auto;
+    height: auto;
+    padding: 0;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Responsividade - Dispositivos móveis */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 8px;
+    gap: 8px;
+  }
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+    word-break: break-word;
+  }
+  .hero-content {
+    margin-left: 8px;
+    margin-top: 16px;
+    max-width: 100vw;
+  }
+  .rocket-area {
+    max-width: 220px;
+    margin: 12px auto 0 auto;
+    padding: 0;
+    position: static;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rocket-area img, .rocket-area svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+/* Responsividade - Dispositivos móveis */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+  .hero-content {
+    margin-left: 12px;
+    margin-top: 24px;
+  }
+  .rocket-area {
+    max-width: 320px;
+    margin: 16px auto;
+    padding: 0;
+  }
+}

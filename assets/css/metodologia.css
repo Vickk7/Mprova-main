@@ -1,0 +1,154 @@
+/* Estilos para a página de metodologia */
+.meto-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem;
+  color: white;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.pilares-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pilar-card {
+  background: #223e6a;
+  border-radius: 12px;
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0rem;
+  flex: 1;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.pilar-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.pilar-card h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: white;
+  display: block;
+}
+
+.pilar-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .meto-section {
+    padding: 2rem 4rem;
+  }
+  
+  .clipboard-icon {
+    width: 150px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .meto-section {
+    padding: 2rem 2rem;
+  }
+  
+  .pilares-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .metodology-layout {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .metodology-image img {
+    width: 200px;
+    margin-top: 0;
+  }
+  
+  .meto-header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .meto-section {
+    padding: 1rem 1rem;
+  }
+  
+  .pilar-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .meto-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.metodology-layout {
+  display: flex;
+  align-items: flex-start;        /* alinha no topo */
+  justify-content: space-between;
+  gap: 0px;                      /* mais espaço entre texto e imagem */
+  flex-wrap: wrap;                /* permite quebrar em telas menores */
+  margin-top: 10px;               /* menos espaço do título */
+  margin-bottom: 20px;
+  padding: 0;                     /* remove padding */
+}
+
+.metodology-text {
+  flex: 1;
+  min-width: 500px;
+  max-width: 100%;
+}
+
+.metodology-image img {
+  width: 300px;              /* imagem menor */
+  height: auto;
+  display: block;
+  margin-top: -125px;         /* sobe a imagem */
+}
+
+.meto-header {
+  text-align: justify;
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+
+.meto-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  word-break: break-word;
+}
+
+.meto-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 71%;
+}

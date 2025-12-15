@@ -1,0 +1,73 @@
+/* Estilos para o footer */
+footer {
+  background-color: #002642;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.footer-logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-img {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-logo-m-blue {
+  color: #4D96FF;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .footer-social {
+    margin-top: 10px;
+  }
+}
+
+.email-link {
+  color: rgb(255, 255, 255);              /* ou a cor que você estiver usando no rodapé */
+  text-decoration: none;     /* remove o sublinhado */
+}
+
+.email-link:hover {
+  color: rgb(56, 77, 199);
+  text-decoration: underline; /* opcional: sublinhado ao passar o mouse */
+}

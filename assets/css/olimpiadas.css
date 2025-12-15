@@ -1,0 +1,93 @@
+.olimp-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem;
+  color: white;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.olimp-header {
+  text-align: justify;
+  max-width: 7000px;
+  margin-bottom: 3rem;
+}
+
+.olimp-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.olimp-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 860px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pilares-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.pilar-card {
+  background: #223e6a;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0rem;
+  flex: 1;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.pilar-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.pilar-card h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: white;
+  display: block;
+}
+
+.pilar-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .clipboard-icon {
+    width: 150px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pilar-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}
